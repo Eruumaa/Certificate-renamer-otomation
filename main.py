@@ -8,7 +8,6 @@ except ImportError:
     exit()
 
 def bersihkan_nama_file(nama):
-    # Menghapus karakter yang dilarang Windows
     return re.sub(r'[<>:"/\\|?*]', '', nama)
 
 def proses_gambar_ke_pdf():
@@ -36,7 +35,7 @@ def proses_gambar_ke_pdf():
         path_rename = os.path.join(folder_path, nama_rename)
         path_pdf = os.path.join(folder_path, nama_pdf)
         
-        # Tentukan file mana yang akan diproses (memprioritaskan yang sudah di-rename)
+        # Tentukan file mana yang akan diproses
         file_sumber = None
         if os.path.exists(path_rename):
             file_sumber = path_rename
@@ -48,7 +47,7 @@ def proses_gambar_ke_pdf():
                 # 1. Buka file gambar
                 gambar = Image.open(file_sumber)
                 
-                # 2. Konversi format warna ke RGB (wajib untuk PDF)
+                # 2. Konversi format warna ke RGB
                 gambar_rgb = gambar.convert("RGB")
                 
                 # 3. Simpan sebagai file PDF
@@ -58,7 +57,7 @@ def proses_gambar_ke_pdf():
                 # Menutup akses gambar agar file aslinya bisa di-rename jika diperlukan
                 gambar.close() 
                 
-                # Jika file masih pakai angka (contoh 55.jpg), sekalian di-rename ke nama orang
+                # Jika file masih pakai angka sekalian di-rename ke nama orang
                 if file_sumber == path_angka:
                     os.rename(path_angka, path_rename)
                     
