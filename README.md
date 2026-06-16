@@ -17,8 +17,8 @@ Buka terminal / Command Prompt dan jalankan perintah berikut untuk menginstal:
 pip install Pillow
 📁 Persiapan Folder & Data
 Sebelum menjalankan script, pastikan struktur folder kamu terlihat seperti ini:
-
-Plaintext
+```
+```
 📁 Folder-Sertifikat/
  ├── 🐍 main.py             <-- Script utama
  ├── 📊 data_nama.csv       <-- File daftar nama
@@ -27,35 +27,19 @@ Plaintext
  ├── 🖼️ 3.jpg               <-- Sertifikat orang ke-3
  └── ... (dan seterusnya)
 ⚠️ Aturan Penting untuk data_nama.csv:
+```
 
-File CSV hanya perlu berisi 1 kolom nama yang memanjang ke bawah.
-
-Tidak perlu baris header (seperti "Nama"). Baris pertama akan langsung dianggap sebagai nama untuk 1.jpg.
-
-Pastikan urutan nama dari atas ke bawah sudah benar-benar sesuai dengan urutan file 1.jpg, 2.jpg, dan seterusnya.
+File CSV hanya perlu berisi 1 kolom nama yang memanjang ke bawah. Tidak perlu baris header (seperti "Nama"). Baris pertama akan langsung dianggap sebagai nama untuk 1.jpg. Pastikan urutan nama dari atas ke bawah sudah benar-benar sesuai dengan urutan file 1.jpg, 2.jpg, dan seterusnya.
 
 🚀 Cara Penggunaan
-Kumpulkan semua file gambar sertifikat (.jpg), file data_nama.csv, dan main.py ke dalam satu folder yang sama.
-
-Buka terminal atau Command Prompt, lalu arahkan ke folder tersebut.
+Kumpulkan semua file gambar sertifikat (.jpg), file data_nama.csv, dan main.py ke dalam satu folder yang sama. Buka terminal atau Command Prompt, lalu arahkan ke folder tersebut.
 
 Jalankan script dengan perintah:
-
-Bash
+```Bash
 python main.py
-Duduk manis dan biarkan script bekerja! Laporan SUCCESS atau ERROR akan muncul di layar terminalmu.
-
-Setelah selesai, folder kamu akan otomatis terisi dengan file .jpg dan .pdf yang sudah berganti nama sesuai daftar peserta. 🎉
+```
+Duduk manis dan biarkan script bekerja! Laporan SUCCESS atau ERROR akan muncul di layar terminalmu. Setelah selesai, folder kamu akan otomatis terisi dengan file .jpg dan .pdf yang sudah berganti nama sesuai daftar peserta. 🎉
 
 👨‍💻 Kontributor
 Dibuat dengan ❤️ oleh Akil.
-Jika ada kendala (seperti salah ketik nama atau salah penomoran), kamu tinggal memperbaiki file yang salah dan jalankan ulang script-nya. Aman dan anti-ribet!
-
-
-***
-
-### Mengapa *readme* ini keren?
-1. **Penggunaan Emoji Visual:** Membuat tulisan panjang menjadi tidak membosankan dan poin-poinnya langsung terbaca oleh mata.
-2. **Struktur Folder (ASCII Tree):** Membantu *programmer* atau orang awam langsung membayangkan bagaimana isi foldernya harus disusun.
-3. **Peringatan CSV yang Jelas:** Memasukkan pelajaran berharga dari masalah *error* CSV kita sebelumnya agar jika kelak digunakan oleh orang lain (atau kamu pakai lagi bulan depan), aturannya sudah sangat *clear*.
-4. **Format Code Block:** Membedakan mana teks biasa dan mana perintah terminal.
+Jika ada kendala (seperti salah ketik nama atau salah penomoran), kamu tinggal memperbaiki file yang salah dan jalankan ulang script-nya.
